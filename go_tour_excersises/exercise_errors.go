@@ -9,7 +9,7 @@ type ErrNegativeSqrt float64
 
 func (e ErrNegativeSqrt) Error() string{
 
-	return fmt.Sprintf("cannot sqrt negative numbers: %v", fmt.Sprint(float64(e)))
+	return fmt.Sprintf("cannot sqrt negative numbers: %v", float64(e))
 
 }
 
